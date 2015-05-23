@@ -1,1 +1,26 @@
-<!DOCTYPE HTML>
+<!doctype html>
+<html lang="en" ng-app="VideoApp">
+<head>
+  <meta charset="utf-8">
+  <title>Video App. by AA</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="row" ng-controller="VideoCtrl">
+    <div class="col-md-2">
+      <label for="video-input">Video's URL</label>
+      <input type="text" id="video-input" ng-model="video"/>
+      <input type="submit" ng-click="echo();" value="load"/>
+    </div>
+    <div class="col-md-10">
+      <div>
+        <iframe width="420" height="315"  src="ng-bind: {{video}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
