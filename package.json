@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "private": true,
+  "name": "angular-video",
+  "description": "A start from scratch",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  }
+}
