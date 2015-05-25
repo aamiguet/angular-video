@@ -16,7 +16,7 @@ How do I run it?
 * Have Node.js and npm `apt-get install nodejs-legacy npm`
 * Install whatever Node.js need `npm install`
 * Maybe install bower`sudo npm install -g bower`
-* Run a local web-server`npm start
+* Run a local web-server `npm start`
 * Connect to localhost:8000/app/index.html
 
 It doesn't work!
