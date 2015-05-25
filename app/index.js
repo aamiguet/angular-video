@@ -5,9 +5,9 @@ var videoApp = angular.module('VideoApp', []);
 videoApp.controller('VideoCtrl', ['$scope', '$sce', function($scope, $sce) {
   $scope.youtubeVideo = function() {
 
-  	function getId(src) {
+    function getId(src) {
       return src.match(/[^=]+$/)[0];
-  	}
+    }
     var id = getId($scope.video);
     if (id) {
       $scope.videoHtml = 
